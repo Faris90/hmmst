@@ -82,13 +82,13 @@ const value = Object.seal({
     playerAllowSkinInName: true,
 
     playerMinSize: 32,
-    playerSpawnSize: 100,
+    playerSpawnSize: 32,
     playerMaxSize: 1500,
     playerMinSplitSize: 60,
     playerMinEjectSize: 60,
     playerSplitCap: 255,
     playerEjectDelay: 2,
-    playerMaxCells: 16,
+    playerMaxCells: 32,
 
     playerMoveMult: 1,
     playerSplitSizeDiv: 1.414213562373095,
@@ -98,7 +98,7 @@ const value = Object.seal({
     playerNoMergeDelay: 15,
     /** @type {"old" | "new"} */
     playerMergeVersion: "old",
-    playerMergeTime: 0,
+    playerMergeTime: 5,
     playerMergeTimeIncrease: 0.02,
     playerDecayMult: 0.001
 });
