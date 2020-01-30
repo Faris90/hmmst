@@ -19,4 +19,8 @@
     "dependencies": {
         "uws": "10.148.1"
     }
+    "scripts": {
+    "start": "node src/index.js --game",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
 }
