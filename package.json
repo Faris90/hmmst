@@ -9,7 +9,7 @@
         "email": "luka.djokovic2@gmail.com"
     },
     "scripts": {
-    "start": "node src/index.js --game",
+    "start": "node cli/index.js --game",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
     "repository": {
