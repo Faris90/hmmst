@@ -27,10 +27,10 @@ const value = Object.seal({
     worldSafeSpawnFromEjectedChance: 0.8,
     worldPlayerDisposeDelay: 25 * 60,
 
-    worldEatMult: 1.140175425099138,
+    worldEatMult: 0.01,
     worldEatOverlapDiv: 3,
 
-    worldPlayerBotsPerWorld: 0,
+    worldPlayerBotsPerWorld: 10,
     /** @type {string[]} */
     worldPlayerBotNames: [],
     /** @type {string[]} */
