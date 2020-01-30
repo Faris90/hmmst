@@ -31,8 +31,12 @@ class Writer {
      * @param {number} a
      */
     writeInt16(a) {
+     try {
         sharedBuf.writeUInt16LE(a, offset);
         offset += 2;
+     } catch(err) {
+     console.log('welp')
+     }
     }
     /**
      * @param {number} a
