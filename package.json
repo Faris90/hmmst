@@ -8,6 +8,10 @@
         "url": "https://github.com/Luka967",
         "email": "luka.djokovic2@gmail.com"
     },
+    "engines": {
+    "node": ">=10.0.0",
+    "npm": ">=6.0.0"
+  },
     "repository": {
         "type": "git",
         "url": "https://github.com/Luka967/OgarII.git"
