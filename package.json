@@ -8,6 +8,10 @@
         "url": "https://github.com/Luka967",
         "email": "luka.djokovic2@gmail.com"
     },
+    "scripts": {
+    "start": "node src/index.js --game",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
     "repository": {
         "type": "git",
         "url": "https://github.com/Luka967/OgarII.git"
@@ -19,8 +23,5 @@
     "dependencies": {
         "uws": "10.148.1"
     }
-    "scripts": {
-    "start": "node src/index.js --game",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+
 }
