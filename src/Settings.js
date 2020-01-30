@@ -47,8 +47,8 @@ const value = Object.seal({
     minionEnableERTPControls: false,
     minionEnableQBasedControl: true,
 
-    pelletMinSize: 10,
-    pelletMaxSize: 20,
+    pelletMinSize: 20,
+    pelletMaxSize: 32,
     pelletGrowTicks: 25 * 60,
     pelletCount: 1000,
 
@@ -82,7 +82,7 @@ const value = Object.seal({
     playerAllowSkinInName: true,
 
     playerMinSize: 32,
-    playerSpawnSize: 32,
+    playerSpawnSize: 100,
     playerMaxSize: 1500,
     playerMinSplitSize: 60,
     playerMinEjectSize: 60,
@@ -98,7 +98,7 @@ const value = Object.seal({
     playerNoMergeDelay: 15,
     /** @type {"old" | "new"} */
     playerMergeVersion: "old",
-    playerMergeTime: 30,
+    playerMergeTime: 0,
     playerMergeTimeIncrease: 0.02,
     playerDecayMult: 0.001
 });
