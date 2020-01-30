@@ -27,7 +27,7 @@ const value = Object.seal({
     worldSafeSpawnFromEjectedChance: 0.8,
     worldPlayerDisposeDelay: 25 * 60,
 
-    worldEatMult: 0.01,
+    worldEatMult: 1.414213562373095,
     worldEatOverlapDiv: 3,
 
     worldPlayerBotsPerWorld: 40,
