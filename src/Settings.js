@@ -30,7 +30,7 @@ const value = Object.seal({
     worldEatMult: 0.01,
     worldEatOverlapDiv: 3,
 
-    worldPlayerBotsPerWorld: 10,
+    worldPlayerBotsPerWorld: 40,
     /** @type {string[]} */
     worldPlayerBotNames: [],
     /** @type {string[]} */
