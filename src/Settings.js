@@ -34,7 +34,7 @@ const value = Object.seal({
     /** @type {string[]} */
     worldPlayerBotNames: [],
     /** @type {string[]} */
-    worldPlayerBotSkins: [],
+    worldPlayerBotSkins: ["doge"],
     worldMinionsPerPlayer: 0,
     worldMaxPlayers: 50,
     worldMinCount: 0,
@@ -67,7 +67,7 @@ const value = Object.seal({
     ejectedCellBoost: 780,
 
     mothercellSize: 149,
-    mothercellCount: 0,
+    mothercellCount: 5,
     mothercellPassiveSpawnChance: 0.05,
     mothercellActiveSpawnSpeed: 1,
     mothercellPelletBoost: 90,
