@@ -43,16 +43,21 @@ class Virus extends Cell {
     /**
      * @param {Cell} cell
      */
-    whenAte(cell) {
+     whenAte(cell) {
         const settings = this.world.settings;
-      
+        if (true) {
             const newD = this.boost.d + settings.virusPushBoost;
             this.boost.dx = (this.boost.dx * this.boost.d + cell.boost.dx * settings.virusPushBoost) / newD;
             this.boost.dy = (this.boost.dy * this.boost.d + cell.boost.dy * settings.virusPushBoost) / newD;
             this.boost.d = newD;
             this.world.setCellAsBoosting(this);
-      
-          
+        } else {
+            this.splitAngle = Math.atan2(cell.boost.dx, cell.boost.dy);
+            if (++this.fedTimes >= settings.virusFeedTimes) {
+                this.fedTimes = 0;
+                this.size = settings.virusSize;
+                this.world.splitVirus(this);
+            } else super.whenAte(cell);
         }
     }
 
