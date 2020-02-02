@@ -8,7 +8,7 @@ const EjectedCell = require("../cells/EjectedCell");
 const PlayerCell = require("../cells/PlayerCell");
 const Mothercell = require("../cells/Mothercell");
 const Virus = require("../cells/Virus");
-const striker1 = require("../cells/stiker1");
+const striker1 = require("../cells/striker1");
 const ChatChannel = require("../sockets/ChatChannel");
 
 const { fullyIntersects, SQRT_2 } = require("../primitives/Misc");
