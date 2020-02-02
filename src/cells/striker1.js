@@ -7,7 +7,7 @@ class Virus extends Cell {
      * @param {number} y
      */
     constructor(world, x, y) {
-        const size = world.settings.virusSize;
+        const size = 54.77;
         super(world, x, y, size, 0xeeff00);
 
         this.fedTimes = 0;
