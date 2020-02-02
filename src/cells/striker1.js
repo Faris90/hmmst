@@ -33,11 +33,11 @@ class Virus extends Cell {
      * @returns {CellEatResult}
      */
     getEjectedEatResult(isSelf) {
-        return this.world.virusCount >= this.world.settings.virusMaxCount ? 0 : isSelf ? 2 : 3;
+        return this.world.strikerCount >= 40 ? 0 : isSelf ? 2 : 3;
     }
 
     onSpawned() {
-        this.world.virusCount++;
+        this.world.strikerCount++;
     }
 
     /**
@@ -65,7 +65,7 @@ class Virus extends Cell {
     }
 
     onRemoved() {
-        this.world.virusCount--;
+        this.world.strikerCount--;
     }
 }
 
