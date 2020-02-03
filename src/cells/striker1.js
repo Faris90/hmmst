@@ -33,19 +33,19 @@ class Virus extends Cell {
      * @returns {CellEatResult}
      */
     getEjectedEatResult(isSelf) {
-        return this.world.strikerCount >= 40 ? 0 : isSelf ? 2 : 3;
+        return this.world.virusCount >= this.world.settings.virusMaxCount ? 0 : isSelf ? 2 : 3;
     }
 
     onSpawned() {
-        this.world.strikerCount++;
+        this.world.virusCount++;
     }
 
     /**
      * @param {Cell} cell
      */
-     whenAte(cell) {
+    whenAte(cell) {
         const settings = this.world.settings;
-        if (true) {
+        if (settings.virusPushing) {
             const newD = this.boost.d + settings.virusPushBoost;
             this.boost.dx = (this.boost.dx * this.boost.d + cell.boost.dx * settings.virusPushBoost) / newD;
             this.boost.dy = (this.boost.dy * this.boost.d + cell.boost.dy * settings.virusPushBoost) / newD;
@@ -66,11 +66,11 @@ class Virus extends Cell {
      */
     whenEatenBy(cell) {
         super.whenEatenBy(cell);
-        if (cell.type === 0) this.world.removeCell(cell);
+        if (cell.type === 0) this.world.popPlayerCell(cell);
     }
 
     onRemoved() {
-        this.world.strikerCount--;
+        this.world.virusCount--;
     }
 }
 
