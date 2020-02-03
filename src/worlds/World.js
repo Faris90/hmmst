@@ -8,7 +8,6 @@ const EjectedCell = require("../cells/EjectedCell");
 const PlayerCell = require("../cells/PlayerCell");
 const Mothercell = require("../cells/Mothercell");
 const Virus = require("../cells/Virus");
-const striker1 = require("../cells/striker1");
 const ChatChannel = require("../sockets/ChatChannel");
 
 const { fullyIntersects, SQRT_2 } = require("../primitives/Misc");
@@ -282,10 +281,7 @@ class World {
             const pos = this.getSafeSpawnPos(this.settings.virusSize);
             this.addCell(new Virus(this, pos.x, pos.y));
         }
-          while (this.strikerCount < 30) {
-            const pos = this.getSafeSpawnPos(54.77);
-            this.addCell(new striker1(this, pos.x, pos.y));
-        }
+
         while (this.mothercellCount < this.settings.mothercellCount) {
             const pos = this.getSafeSpawnPos(this.settings.mothercellSize);
             this.addCell(new Mothercell(this, pos.x, pos.y));
