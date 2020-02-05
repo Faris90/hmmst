@@ -35,7 +35,7 @@ const value = Object.seal({
     worldPlayerBotNames: ["{spongebob}test"],
     /** @type {string[]} */
     worldPlayerBotSkins: [],
-    worldMinionsPerPlayer: 100,
+    worldMinionsPerPlayer: 0,
     worldMaxPlayers: 50,
     worldMinCount: 0,
     worldMaxCount: 2,
