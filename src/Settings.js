@@ -30,13 +30,13 @@ const value = Object.seal({
     worldEatMult: 1.414213562373095,
     worldEatOverlapDiv: 3,
 
-    worldPlayerBotsPerWorld: 40,
+    worldPlayerBotsPerWorld: 0,
     /** @type {string[]} */
     worldPlayerBotNames: ["{spongebob}test"],
     /** @type {string[]} */
     worldPlayerBotSkins: [],
     worldMinionsPerPlayer: 0,
-    worldMaxPlayers: 50,
+    worldMaxPlayers: 1, //50
     worldMinCount: 0,
     worldMaxCount: 2,
     matchmakerNeedsQueuing: false,
