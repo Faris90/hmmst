@@ -39,7 +39,7 @@ const value = Object.seal({
     worldMaxPlayers: 1, //50
     worldMinCount: 0,
     worldMaxCount: 2,
-    matchmakerNeedsQueuing: false,
+    matchmakerNeedsQueuing: true,
     matchmakerBulkSize: 1,
 
     minionName: "Minion",
