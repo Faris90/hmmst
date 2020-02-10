@@ -36,7 +36,7 @@ const value = Object.seal({
     /** @type {string[]} */
     worldPlayerBotSkins: [],
     worldMinionsPerPlayer: 0,
-    worldMaxPlayers: 1, //50
+    worldMaxPlayers: 50, //50
     worldMinCount: 0,
     worldMaxCount: 2,
     matchmakerNeedsQueuing: true,
